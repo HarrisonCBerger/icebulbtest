@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form action="#" method="POST">
+        <p>If you would like information or to have one of our staff members contact you, please fill out this questionnaire.</p>
+    
+        <!-- First Row -->
+        <div class="row">
+            <input type="text" name="first" placeholder="First Name" required>
+            <input type="text" name="last" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+    
+        <!-- Second Row -->
+        <div class="row">
+            <input type="text" name="type" placeholder="Event Type & Date" required>
+            <input type="date" name="date" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+        </div>
+    
+        <!-- Third Row -->
+        <div class="row">
+            <input type="text" name="location" placeholder="Event Location" required>
+            <!-- Dropdown -->
+            <select class="select-box" name="category" id="category" required>
+                <option value="" disabled selected>Which Ice Product are you inquiring about?</option>
+                <option value="icesculptures">Ice Sculptures</option>
+                <option value="cocktailice">Cocktail Ice</option>
+                <option value="iceluges">Ice Luges</option>
+                <option value="icebarsandlounges">Ice Bars & Lounges</option>
+                <option value="foodpresentation">Food Presentation</option>
+                <option value="icefurnitureanddecor">Ice Furniture & Decor</option>
+                <option value="iceeventsthatdazzle">Ice Events That Dazzle</option>
+                <option value="retail">Retail</option>
+            </select>
+        
+            <!-- Radio button questions -->
+            <div class="radio-questions">
+                <div class="radio-group">
+                    <span>Have you ever ordered ice before?</span>
+                    <label>
+                        <input type="radio" id="yes" name="ordered-ice"/>
+                        <span>Yes</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="no" name="ordered-ice"/>
+                        <span>No</span>
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <span>How do you prefer to be contacted?</span>
+                    <label>
+                        <input type="radio" id="phone" name="contact-method"/>
+                        <span>Phone</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="email" name="contact-method"/>
+                        <span>Email</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fourth Row -->
+        <textarea rows="5" cols="60" name="message" placeholder="Please list any special instructions or comments about your needs"></textarea>
+    
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
