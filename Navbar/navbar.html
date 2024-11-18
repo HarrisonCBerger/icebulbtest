@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="/Navbar/navbar.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar() class="logo"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="undefined"><path d="M480-424 284-228q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536-480l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480-424Z"/></svg></a></li>
+            <li><a href="/Homepage/homepage.html">HOME</a></li>
+            <li><a href="/About/about.html">ABOUT</a></li>
+            <li><a href="/Products/products.html">PRODUCTS</a></li>
+            <li><a href="/Corporate/corporate.html">CORPORATE</a></li>
+            <li><a href="/Press/press.html">PRESS</a></li>
+            <li><a href="/FAQS/faqs.html">FAQS</a></li>
+            <li><a href="/Contact/">CONTACT</a></li>
+            <li><a href="https://www.instagram.com/icebulb/">OUR CREATIONS <img class="icon" src="/public/images/mdi-instagram.svg" alt="Instagram Logo"></a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobileLogo"><a href="/Homepage/homepage.html"><img src="/img/Blue White Text Green Outline Logo.png" alt="Ice Bulb Logo"></a></li>
+            <li class="hideOnMobile"><a href="/Homepage/homepage.html">HOME</a></li>
+            <li class="hideOnMobile"><a href="/About/about.html">ABOUT</a></li>
+            <li class="hideOnMobile"><a href="/Products/products.html">PRODUCTS</a></li>
+            <li class="hideOnMobile"><a href="/Corporate/corporate.html">CORPORATE</a></li>
+            <li class="hideOnMobile"><a href="/Press/press.html">PRESS</a></li>
+            <li class="hideOnMobile"><a href="/FAQS/faqs.html">FAQS</a></li>
+            <li class="hideOnMobile"><a href="/Contact/">CONTACT</a></li>
+            <li class="hideOnMobile"><a href="https://www.instagram.com/icebulb/">OUR CREATIONS <img class="icon" src="/public/images/mdi-instagram.svg" alt="Instagram Logo"></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="undefined"><path d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
